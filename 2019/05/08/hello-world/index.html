@@ -281,7 +281,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2019/05/08/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/05/08/hello-world/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/05/08/hello-world/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -381,9 +381,12 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     </div>
 
   
@@ -627,6 +630,26 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://blog.chenjun.me.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2019/05/08/hello-world/';
+          this.page.identifier = '2019/05/08/hello-world/';
+          this.page.title = 'Hello World';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://blog.chenjun.me.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
 
 
 
@@ -642,49 +665,8 @@
 
 
 
-  
 
 
-
-
-
-
-
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
-            owner: 'JunC74',
-            repo: 'blog',
-            
-            lang: "zh-Hans" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: '7b54b5d48c103c8fb92fb9bc5babd3178608c196',
-            
-                client_id: 'fdc6f45caf4fc3d4e0e8'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
-    
 
 
 
